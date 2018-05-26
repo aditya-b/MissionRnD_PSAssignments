@@ -1,0 +1,1 @@
+from Package1.Package2 import Module2

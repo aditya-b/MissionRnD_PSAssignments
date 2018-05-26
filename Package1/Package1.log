@@ -1,0 +1,12 @@
+DEBUG: Entry log of function1 at time  2018-05-14 21:49:46,897
+ERROR: invalid literal for int() with base 10: 'a' 2018-05-14 21:49:58,590
+DEBUG: Exit log of function1 at time  2018-05-14 21:49:58,590
+DEBUG: Entry log of function2 at time  2018-05-14 21:49:58,590
+ERROR: invalid literal for int() with base 10: 'b' 2018-05-14 21:50:01,255
+DEBUG: Exit log of function2 at time  2018-05-14 21:50:01,255
+DEBUG: Entry log of function5 at time  2018-05-14 21:50:04,714
+ERROR: invalid literal for int() with base 10: 'e' 2018-05-14 21:50:06,064
+DEBUG: Exit log of function5 at time  2018-05-14 21:50:06,064
+DEBUG: Entry log of function6 at time  2018-05-14 21:50:06,064
+ERROR: invalid literal for int() with base 10: 'f' 2018-05-14 21:50:07,199
+DEBUG: Exit log of function6 at time  2018-05-14 21:50:07,199

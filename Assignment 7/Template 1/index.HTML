@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <title>Eventzo- Events made in heaven</title>
+        <link rel="icon" href="confetti.png">
+        <style>
+            .navbar
+            {
+                background-color: black;
+                position: fixed;
+                color:dodgerblue;
+                width:100%;
+                height:auto;
+                top:0;
+                left:0;
+                align-items: center;
+                z-index: 1;
+            }
+            .navbar .menu
+            {
+                background-color: black;
+                color:white;
+                display: inline-block;
+            }
+            .list
+            {
+                position:fixed;
+                background-color: white;
+                opacity: 0;
+                margin-left: -10px;
+                margin-top:10px;
+                display: none;
+            }
+            .menu_head
+            {
+                padding: 10px;
+            }
+            .navbar .menu .menu_head:hover .list
+            {
+                opacity: 1;
+                display: block;
+            }
+            .navbar .menu_head:hover 
+            {
+                background-color: white;
+                color: black;
+            }
+            .link
+            {
+                padding: 10px;
+            }
+            .link:hover
+            {
+                background-color:black;
+                color:white;
+            }
+            a,a:active,a:visited
+            {
+                text-decoration: none;
+                color:inherit;
+            }
+            .container
+            {
+                position: absolute;
+                top:80px;
+                left: 0;
+            }
+            .blurimage
+            {
+                position: relative;
+                width:100px;
+                height: 100px;
+                display: inline-block;
+                margin: 10px;
+            }
+            .image
+            {
+                border-radius: 50%;
+                width: inherit;
+                height: inherit;
+            }
+            .text
+            {
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                text-align: center;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                border-radius: 50%;
+            }
+            .blurimage:hover .image
+            {
+                opacity: 0.2;
+                transition: 0.3s ease;
+            }
+            .blurimage:hover .text
+            {
+                opacity: 1;
+                transition: 0.3s ease;
+            }
+            .title
+            {
+                background-color: black;
+                padding:10px;
+                color:goldenrod;
+                display: inline-block;
+                margin-right: 30%;
+                font-size: 25px;
+                font-family: cursive;
+            }
+            .module
+            {
+                margin: 30px;
+                padding: 10px;
+                border-radius: 10px;
+                color: white;
+                width: 30%;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body style="font-family: sans-serif;">
+        <div class="navbar">
+            <img src="balloons.png" width="25px" height="25px" style="margin-top: 10px; margin-left: 10px; float: left;top:0;">
+            <img src="confetti.png" style="float: right; margin-top: 10px; margin-right: 10px;" width="25px" height="25px">
+            <div class="Title"><b>Eventzo</b></div>
+            <div class="menu">
+                <div class="menu_head"><a href="new%202.html">Home</a></div>
+            </div>
+            <div class="menu">
+                <div class="menu_head">Organize Events
+                <div class="list">
+                    <div class='link'><a href='new%202.html'>Marriage</a></div>
+                    <div class='link'><a href='new%202.html'>Corporate Meetings</a></div>
+                    <div class='link'><a href='new%202.html'>Engagement</a></div>
+                    <div class='link'><a href='new%202.html'>Birthday</a></div>
+                    <div class='link'><a href='new%202.html'>Marriage Anniversary</a></div>
+                    <div class='link'><a href='new%202.html'>Others</a></div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="menu">
+                <div class="menu_head">Services
+                <div class="list">
+                    <div class='link'><a href='new%202.html'>Catering</a></div>
+                    <div class='link'><a href='new%202.html'>Decoration</a></div>
+                    <div class='link'><a href='new%202.html'>Musical Night</a></div>
+                    <div class='link'><a href='new%202.html'>Photography</a></div>
+                    <div class='link'><a href='new%202.html'>Design</a></div>
+                </div></div>
+            </div>
+            <div class="menu">
+                <div class="menu_head"><a href="new%202.html">Gallery</a></div>
+            </div>
+            <div class="menu">
+                <div class="menu_head"><a href="new%202.html">About Us</a></div>
+            </div>
+        </div>
+        <div class="container">
+            <script>
+                var i=0;
+                var a=setInterval(changeImage,1000);
+                function changeImage()
+                {
+                    var arr=["balloons.png","confetti.png","butterfly.jpg"];
+                    document.getElementById('cr').src=arr[i%3];
+                    document.getElementById('cr').transition='ease';
+                    i+=1;
+                }
+            </script>
+            <center>
+            <table style="width:60%; opacity: 0.5;">
+            <tr>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                <th style="white-space: nowrap;" rowspan="2"><h3>What is Eventzo?</h3></th>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                </tr>
+                <tr style="height: 15px;"></tr>
+            </table>
+            <div class="blurimage" style="float: left;margin: 35px">
+                <img class="image" src="engagement.jpg">
+                <div class="text"><br><br><b>Engagement</b></div>
+            </div>
+            <div class="blurimage" style="float: right;margin: 35px">
+                <img class="image" src="marriage.jpg">
+                <div class="text"><br><br><b>Marriage</b></div>
+            </div>
+            <p style="width:60%;">
+                    &emsp; Everyday is a day to celebrate! Eventzo is a platform to help stage and organoze your events. We through Eventzo help plan your events. We serve in various ways at various levels with your desired grandeur to make every moment that you celebrate be captured in the hearts of people. It's as easy as a Thanos snap for us to wither away all your grievy moments and make them all a celebrating ones! <br>
+                &emsp; Ranging from birthday parties and get togethers, to corporate meetings, we organize every event at your destined place with your taste at the best and affordable price. Compromise is just a fairy tale to us and is never real and happening.
+            </p><br><br>
+            <div class="blurimage" style="float: left;margin: 35px">
+                <img class="image" src="birthday.jpg">
+                <div class="text"><br><br><b>Birthday</b></div>
+            </div>
+            <div class="blurimage" style="float: right;margin: 35px">
+                <img class="image" src="cor.jpg">
+                <div class="text"><br><b>Corporate Meetings</b></div>
+            </div>
+            <table style="width:60%; opacity: 0.5;">
+            <tr>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                <th style="white-space: nowrap;" rowspan="2"><h3>Why choose Eventzo?</h3></th>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                </tr>
+                <tr style="height: 15px;"></tr>
+            </table>
+            <p style="width:60%;">
+                    &emsp; Everyday is a day to celebrate! Eventzo is a platform to help stage and organoze your events. We through Eventzo help plan your events. We serve in various ways at various levels with your desired grandeur to make every moment that you celebrate be captured in the hearts of people. It's as easy as a Thanos snap for us to wither away all your grievy moments and make them all a celebrating ones! <br>
+                &emsp; Ranging from birthday parties and get togethers, to corporate meetings, we organize every event at your destined place with your taste at the best and affordable price. Compromise is just a fairy tale to us and is never real and happening.
+            </p>
+            <br><br>
+            <div class="blurimage" style="float: left;margin: 35px">
+                <img class="image" src="ann.jpg">
+                <div class="text"><br><br><b>Anniversary</b></div>
+            </div>
+            <div class="blurimage" style="float: right;margin: 35px">
+                <img class="image" src="more.jpg">
+                <div class="text"><br><br><b>Many more</b></div>
+            </div>
+            <table style="width:60%; opacity: 0.5;">
+            <tr>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                <th style="white-space: nowrap;" rowspan="2"><h3>How do we operate?</h3></th>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                </tr>
+                <tr style="height: 15px;"></tr>
+            </table>
+            <p style="width:60%;">
+                    &emsp; Everyday is a day to celebrate! Eventzo is a platform to help stage and organoze your events. We through Eventzo help plan your events. We serve in various ways at various levels with your desired grandeur to make every moment that you celebrate be captured in the hearts of people. It's as easy as a Thanos snap for us to wither away all your grievy moments and make them all a celebrating ones! <br>
+                &emsp; Ranging from birthday parties and get togethers, to corporate meetings, we organize every event at your destined place with your taste at the best and affordable price. Compromise is just a fairy tale to us and is never real and happening.
+            </p>
+            <br><br>
+            <table style="width:60%; opacity: 0.5;">
+            <tr>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                <th style="white-space: nowrap;" rowspan="2"><h3>Locations we serve</h3></th>
+                <th style='width:50%;z-index: -1;'><hr></th>
+                </tr>
+                <tr style="height: 15px;"></tr>
+            </table>
+            <div class="blurimage" style="margin: 35px">
+                <img class="image" src="che.jpg">
+                <div class="text"><br><br><b>Chennai</b></div>
+            </div>
+            <div class="blurimage" style=";margin: 35px">
+                <img class="image" src="Coc.jpg">
+                <div class="text"><br><br><b>Cochin</b></div>
+            </div>
+            <div class="blurimage" style="margin: 35px">
+                <img class="image" src="hyd.jpg">
+                <div class="text"><br><br><b>Hyderabad</b></div>
+            </div>
+            <div class="blurimage" style=";margin: 35px">
+                <img class="image" src="ahm.jpg">
+                <div class="text"><br><br><b>Ahmedabad</b></div>
+            </div>
+            <div class="blurimage" style=";margin: 35px">
+                <img class="image" src="mum.jpg">
+                <div class="text"><br><br><b>Mumbai</b></div>
+            </div>
+            <div class="blurimage" style=";margin: 35px">
+                <img class="image" src="del.jpg">
+                <div class="text"><br><br><b>Delhi</b></div>
+            </div>
+            <br>
+            <div class="blurimage" style=";margin: 35px">
+                <img class="image" src="jai.jpg">
+                <div class="text"><br><br><b>Jaipur</b></div>
+            </div>
+            <div class="blurimage" style=";margin: 35px">
+                <img class="image" src="more2.jpg">
+                <div class="text"><br><br><b>Many more</b></div>
+            </div>
+            </center>
+        <div style="background-color: black;color: white; font-size: 14px;padding: 20px;"><center>
+            <table style="color: white;font-size: 14px;align-content: center">
+            <tr>
+                <th style="padding-right: 40px;width:200px;" colspan="2" >HEAD OFFICE</th>
+                <th style="padding-right: 40px;"><a style="text-decoration: none" href="ahm.jpg">Contact Us</a></th>
+                <th style="padding-right: 40px;"><a style="text-decoration: none" href="ahm.jpg">Terms & Condtions</a></th>
+            </tr>
+            <tr>
+                <td style="font-size: 12px;color:darkgrey;padding: 10px;vertical-align: baseline">Address: </td>
+                <td style="font-size: 12px;color:darkgrey;padding: 10px">Opp. D-Mart building,<br>Kukatpally<br>Hyderabad<br>500014</td>
+            </tr>
+            <tr>
+                <td style="font-size: 12px;color:darkgrey;padding: 10px;vertical-align: baseline">Email: </td>
+                <td style="font-size: 12px;color:darkgrey;padding: 10px">customer_care@eventzo.co.in</td>
+            </tr>
+            <tr>
+                <td style="font-size: 12px;color:darkgrey;padding: 10px;vertical-align: baseline">Phone: </td>
+                <td style="font-size: 12px;color:darkgrey;padding: 10px">+918885544221<br>+916302445698</td>
+            </tr>
+            </table>
+        </center></div>
+        </div>
+    </body>
+</html>
